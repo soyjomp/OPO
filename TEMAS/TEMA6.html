@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tema 6: L'Acte Administratiu - UB</title>
+    <style>
+        :root {
+            --ub-blue: #003058;
+            --ub-red: #e30613;
+            --light-bg: #f8fafc;
+            --text-dark: #1e293b;
+        }
+
+        body {
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: var(--text-dark);
+            background-color: var(--light-bg);
+            margin: 0;
+            padding: 0;
+        }
+
+        .btn-inici {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            background-color: #000;
+            color: #fff;
+            padding: 12px 20px;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: bold;
+            font-size: 14px;
+            z-index: 1000;
+            border: 1px solid rgba(255,255,255,0.3);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .btn-inici:hover {
+            background-color: #333;
+            transform: translateX(-3px);
+        }
+
+        .container {
+            max-width: 850px;
+            margin: 100px auto 40px;
+            background: #fff;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+            border-top: 10px solid var(--ub-blue);
+        }
+
+        header {
+            text-align: center;
+            border-bottom: 2px solid #f1f5f9;
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+        }
+
+        h1 {
+            color: var(--ub-blue);
+            font-size: 2.2rem;
+            margin: 0;
+        }
+
+        h2 {
+            color: var(--ub-blue);
+            border-left: 6px solid var(--ub-red);
+            padding: 10px 0 10px 15px;
+            margin-top: 40px;
+            font-size: 1.6rem;
+            background: #f8fafc;
+        }
+
+        .box-constitucio {
+            background-color: #f1f5f9;
+            border-radius: 8px;
+            padding: 25px;
+            margin: 20px 0;
+            border: 1px solid #e2e8f0;
+        }
+
+        .important { color: var(--ub-red); font-weight: bold; }
+
+        .test-alert {
+            background-color: #fffbeb;
+            border: 2px dashed #f59e0b;
+            padding: 20px;
+            margin: 25px 0;
+            border-radius: 8px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 25px 0;
+        }
+
+        th, td {
+            text-align: left;
+            padding: 15px;
+            border-bottom: 1px solid #e2e8f0;
+        }
+
+        th { background-color: var(--ub-blue); color: white; }
+
+        .badge {
+            background: var(--ub-red);
+            color: white;
+            padding: 3px 10px;
+            border-radius: 12px;
+            font-size: 0.8rem;
+            font-weight: bold;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 60px;
+            padding-top: 20px;
+            border-top: 1px solid #e2e8f0;
+            color: #94a3b8;
+            font-size: 0.9rem;
+        }
+
+        .highlight-text {
+            background: #fef2f2;
+            padding: 2px 5px;
+            border-radius: 4px;
+            color: var(--ub-red);
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+
+    <a href="../index.html" class="btn-inici"><span>←</span> Tornar a l'inici</a>
+
+    <div class="container">
+        <header>
+            <h1>Tema 6: L'Acte Administratiu</h1>
+        </header>
+
+        <section>
+            <h2>1. Concepte i Elements de l'Acte Administratiu</h2>
+            <div class="box-constitucio">
+                <strong>Concepte:</strong> Declaració de voluntat, judici, coneixement o desig realitzada per una Administració Pública en l'exercici d'una potestat administrativa distinta de la reglamentària.
+            </div>
+            <ul>
+                <li><strong>Subjectiu:</strong> Administració pública competent i titular de l'òrgan amb capacitat.</li>
+                <li><strong>Objectiu:</strong> Contingut (possible, lícit, determinat) i pressupòsit de fet.</li>
+                <li><strong>Formal:</strong> Procediment legalment establert, <span class="important">motivació</span> i forma escrita (generalment).</li>
+                <li><strong>Teleològic:</strong> La finalitat ha de ser el compliment de l'interès públic.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>2. Motivació i Forma</h2>
+            <p>Els actes s'han de produir per escrit a través de mitjans electrònics, llevat que la seva naturalesa exigeixi una altra forma.</p>
+            <div class="test-alert">
+                <strong>La Motivació (Art. 35 Llei 39/2015):</strong> Han de ser motivats (amb referència a fets i fonaments de dret) els actes que limitin drets, resolguin recursos, se separin del criteri precedent o s'emetin en exercici de potestats discrecionals.
+            </div>
+        </section>
+
+        <section>
+            <h2>3. El Silenci Administratiu i Actes Presumptes</h2>
+            <div class="box-constitucio">
+                L'Administració té l'obligació de dictar resolució expressa i notificar-la en tots els procediments.
+            </div>
+            <table>
+                <thead>
+                    <tr><th>Tipus de Silenci</th><th>Regla General / Efecte</th></tr>
+                </thead>
+                <tbody>
+                    <tr><td><strong>Positiu</strong></td><td>Regla general en procediments iniciats a sol·licitud de l'interessat (estimatori).</td></tr>
+                    <tr><td><strong>Negatiu</strong></td><td>Excepcions: Activitats que danyin el medi ambient, responsabilitat patrimonial, procediments d'impugnació d'actes (recursos).</td></tr>
+                    <tr><td><strong>Caducitat</strong></td><td>En procediments iniciats d'ofici que puguin derivar en efectes desfavorables (sancions).</td></tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section>
+            <h2>4. Eficàcia: Notificació i Publicació</h2>
+            <p>Els actes administratius es presumeixen vàlids i produeixen efectes des de la data en què es dicten, llevat que es disposi una altra cosa.</p>
+            <ul>
+                <li><strong>Notificació:</strong> S'ha de cursar en el termini de <span class="highlight-text">10 dies hàbils</span> des que l'acte ha estat dictat. Ha de contenir el text íntegre, si és definitiu o no, recursos possibles, òrgan i terminis.</li>
+                <li><strong>Publicació:</strong> Substitueix la notificació quan l'acte té destinataris plurals o es tracta d'actes en processos selectius (oposicions).</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>5. Invalidesa: Actes Nuls i Anul·lables</h2>
+            <table>
+                <thead>
+                    <tr><th>Característica</th><th>Nul·litat de ple dret (Art. 47)</th><th>Anul·labilitat (Art. 48)</th></tr>
+                </thead>
+                <tbody>
+                    <tr><td><strong>Gravetat</strong></td><td>Molt greu (ordre públic).</td><td>Menys greu (infracció legal).</td></tr>
+                    <tr><td><strong>Termini</strong></td><td>No prescriu mai.</td><td>Termini limitat per impugnar.</td></tr>
+                    <tr><td><strong>Subsanació</strong></td><td>No es pot convalidar.</td><td>Es pot convalidar per l'òrgan competent.</td></tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section class="test-alert">
+            <h3>⚠️ Alerta Examen UB</h3>
+            <p><strong>Silenci en Recursos:</strong> Si s'interposa un recurs d'alçada contra un silenci negatiu, el següent silenci serà <strong>positiu</strong> (excepció de la doble negativa).</p>
+            <p><strong>Nul·litat:</strong> Són nuls els actes que lesionin drets fonamentals, els dictats per òrgan manifestament incompetent o els que tinguin un contingut impossible.</p>
+        </section>
+
+        <footer>© 2025 Oposició UB 2026 - Tema 6 preparat</footer>
+    </div>
+</body>
+</html>

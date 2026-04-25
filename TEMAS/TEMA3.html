@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tema 3: Llei d'Universitats de Catalunya (LUC) - UB</title>
+    <style>
+        :root {
+            --ub-blue: #003058;
+            --ub-red: #e30613;
+            --light-bg: #f8fafc;
+            --text-dark: #1e293b;
+        }
+
+        body {
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: var(--text-dark);
+            background-color: var(--light-bg);
+            margin: 0;
+            padding: 0;
+        }
+
+        .btn-inici {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            background-color: #000;
+            color: #fff;
+            padding: 12px 20px;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: bold;
+            font-size: 14px;
+            z-index: 1000;
+            border: 1px solid rgba(255,255,255,0.3);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .btn-inici:hover {
+            background-color: #333;
+            transform: translateX(-3px);
+        }
+
+        .container {
+            max-width: 850px;
+            margin: 100px auto 40px;
+            background: #fff;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+            border-top: 10px solid var(--ub-blue);
+        }
+
+        header {
+            text-align: center;
+            border-bottom: 2px solid #f1f5f9;
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+        }
+
+        h1 {
+            color: var(--ub-blue);
+            font-size: 2.2rem;
+            margin: 0;
+        }
+
+        h2 {
+            color: var(--ub-blue);
+            border-left: 6px solid var(--ub-red);
+            padding: 10px 0 10px 15px;
+            margin-top: 40px;
+            font-size: 1.6rem;
+            background: #f8fafc;
+        }
+
+        .box-constitucio {
+            background-color: #f1f5f9;
+            border-radius: 8px;
+            padding: 25px;
+            margin: 20px 0;
+            border: 1px solid #e2e8f0;
+        }
+
+        .important { color: var(--ub-red); font-weight: bold; }
+
+        .test-alert {
+            background-color: #fffbeb;
+            border: 2px dashed #f59e0b;
+            padding: 20px;
+            margin: 25px 0;
+            border-radius: 8px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 25px 0;
+        }
+
+        th, td {
+            text-align: left;
+            padding: 15px;
+            border-bottom: 1px solid #e2e8f0;
+        }
+
+        th { background-color: var(--ub-blue); color: white; }
+
+        .badge {
+            background: var(--ub-red);
+            color: white;
+            padding: 3px 10px;
+            border-radius: 12px;
+            font-size: 0.8rem;
+            font-weight: bold;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 60px;
+            padding-top: 20px;
+            border-top: 1px solid #e2e8f0;
+            color: #94a3b8;
+            font-size: 0.9rem;
+        }
+
+        .highlight-text {
+            background: #fef2f2;
+            padding: 2px 5px;
+            border-radius: 4px;
+            color: var(--ub-red);
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+
+    <a href="../index.html" class="btn-inici"><span>←</span> Tornar a l'inici</a>
+
+    <div class="container">
+        <header>
+            <h1>Tema 3: Llei d'Universitats de Catalunya (LUC)</h1>
+        </header>
+
+        <section>
+            <h2>1. Objecte i Abast de la Llei 1/2003</h2>
+            <div class="box-constitucio">
+                La <strong>LUC</strong> desenvolupa les competències de la Generalitat en ensenyament superior d'acord amb l'Estatut d'Autonomia.
+            </div>
+            <ul>
+                <li><strong>Finalitat:</strong> Ordenar el sistema universitari de Catalunya.</li>
+                <li><strong>Relació normativa:</strong> Complementa la llei estatal (LOSU) en els aspectes delegats a les CCAA.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>2. Estructura del Sistema Universitari Català</h2>
+            <table>
+                <thead>
+                    <tr><th>Element</th><th>Funció Principal</th></tr>
+                </thead>
+                <tbody>
+                    <tr><td><strong>CIC</strong></td><td><span class="important">Consell Interuniversitari</span>: Coordinació i consulta.</td></tr>
+                    <tr><td><strong>AQU Catalunya</strong></td><td>Agència de Qualitat: <span class="badge">Avaluació</span> i acreditació.</td></tr>
+                    <tr><td><strong>Consell Social</strong></td><td>Òrgan de participació de la societat a la universitat.</td></tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section class="test-alert">
+            <h3>⚠️ Alerta Examen UB</h3>
+            <p><strong>El CIC:</strong> És l'òrgan de coordinació i hi participen totes les universitats catalanes (públiques i privades).</p>
+            <p><strong>AQU:</strong> És qui realitza les avaluacions per a la contractació de professorat lector o agregat.</p>
+        </section>
+
+        <section>
+            <h2>3. Figures de PDI segons la LUC</h2>
+            <div class="box-constitucio">
+                <ul>
+                    <li><strong>Professorat Lector:</strong> Doctor, contracte temporal (màxim 6 anys).</li>
+                    <li><strong>Professorat Agregat:</strong> Doctor, contracte indefinit (acreditat per l'AQU).</li>
+                    <li><strong>Professorat Catedràtic:</strong> Categoria màxima de contractació.</li>
+                </ul>
+            </div>
+        </section>
+
+        <footer>© 2025 Oposició UB 2026 - Tema 3 preparat</footer>
+    </div>
+</body>
+</html>

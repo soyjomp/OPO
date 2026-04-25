@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tema 8: Signatura Electrònica i Certificats - UB</title>
+    <style>
+        :root {
+            --ub-blue: #003058;
+            --ub-red: #e30613;
+            --light-bg: #f8fafc;
+            --text-dark: #1e293b;
+        }
+
+        body {
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: var(--text-dark);
+            background-color: var(--light-bg);
+            margin: 0;
+            padding: 0;
+        }
+
+        .btn-inici {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            background-color: #000;
+            color: #fff;
+            padding: 12px 20px;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: bold;
+            font-size: 14px;
+            z-index: 1000;
+            border: 1px solid rgba(255,255,255,0.3);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .btn-inici:hover {
+            background-color: #333;
+            transform: translateX(-3px);
+        }
+
+        .container {
+            max-width: 850px;
+            margin: 100px auto 40px;
+            background: #fff;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+            border-top: 10px solid var(--ub-blue);
+        }
+
+        header {
+            text-align: center;
+            border-bottom: 2px solid #f1f5f9;
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+        }
+
+        h1 {
+            color: var(--ub-blue);
+            font-size: 2.2rem;
+            margin: 0;
+        }
+
+        h2 {
+            color: var(--ub-blue);
+            border-left: 6px solid var(--ub-red);
+            padding: 10px 0 10px 15px;
+            margin-top: 40px;
+            font-size: 1.6rem;
+            background: #f8fafc;
+        }
+
+        .box-constitucio {
+            background-color: #f1f5f9;
+            border-radius: 8px;
+            padding: 25px;
+            margin: 20px 0;
+            border: 1px solid #e2e8f0;
+        }
+
+        .important { color: var(--ub-red); font-weight: bold; }
+
+        .test-alert {
+            background-color: #fffbeb;
+            border: 2px dashed #f59e0b;
+            padding: 20px;
+            margin: 25px 0;
+            border-radius: 8px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 25px 0;
+        }
+
+        th, td {
+            text-align: left;
+            padding: 15px;
+            border-bottom: 1px solid #e2e8f0;
+        }
+
+        th { background-color: var(--ub-blue); color: white; }
+
+        .badge {
+            background: var(--ub-red);
+            color: white;
+            padding: 3px 10px;
+            border-radius: 12px;
+            font-size: 0.8rem;
+            font-weight: bold;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 60px;
+            padding-top: 20px;
+            border-top: 1px solid #e2e8f0;
+            color: #94a3b8;
+            font-size: 0.9rem;
+        }
+
+        .highlight-text {
+            background: #fef2f2;
+            padding: 2px 5px;
+            border-radius: 4px;
+            color: var(--ub-red);
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+
+    <a href="../index.html" class="btn-inici"><span>←</span> Tornar a l'inici</a>
+
+    <div class="container">
+        <header>
+            <h1>Tema 8: Fonaments de l'Administració Electrònica i Identificació</h1>
+        </header>
+
+        <section>
+            <h2>1. Fonaments i Principis de l'Administració Electrònica</h2>
+            <div class="box-constitucio">
+                L'Administració Electrònica es basa en la utilització de les TIC per millorar els serveis públics. Està regulada principalment per la <strong>Llei 39/2015</strong> i la <strong>Llei 40/2015</strong>.
+            </div>
+            <ul>
+                <li><strong>Principi de neutralitat tecnològica:</strong> L'Administració no ha d'imposar una tecnologia concreta.</li>
+                <li><strong>Principi d'interoperabilitat:</strong> Capacitat dels sistemes per compartir dades (important: <span class="important">Esquema Nacional d'Interoperabilitat - ENI</span>).</li>
+                <li><strong>Principi de seguretat:</strong> Protecció de dades i sistemes (<span class="important">Esquema Nacional de Seguretat - ENS</span>).</li>
+                <li><strong>Principi de proximitat:</strong> Facilitar la relació del ciutadà amb l'Administració sense barreres físiques.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>2. La Signatura Electrònica</h2>
+            <p>D'acord amb el Reglament (UE) 910/2014 (Reglament eIDAS) i la Llei 6/2020, existeixen tres nivells de signatura:</p>
+            <table>
+                <thead>
+                    <tr><th>Tipus de Signatura</th><th>Característiques</th></tr>
+                </thead>
+                <tbody>
+                    <tr><td><strong>Simple</strong></td><td>Dades en format electrònic annexes a altres dades (ex: un nom al final d'un correu). Nivell de seguretat baix.</td></tr>
+                    <tr><td><strong>Avançada</strong></td><td>Vinculada al signatari de manera única, permet la seva identificació i ha estat creada amb dades sota el seu control exclusiu. Detecta qualsevol modificació posterior.</td></tr>
+                    <tr><td><strong>Qualificada</strong></td><td><span class="badge">Màxim nivell</span>. Signatura avançada creada mitjançant un <strong>dispositiu qualificat</strong> de creació de signatura i basada en un <strong>certificat qualificat</strong>. Té el mateix valor legal que la signatura manuscrita.</td></tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section class="test-alert">
+            <h3>⚠️ Alerta Examen UB: Autenticació vs Signatura</h3>
+            <p><strong>Identificació/Autenticació:</strong> Serveix per assegurar qui és la persona que accedeix a un sistema (ex: entrar a la Seu de la UB amb idCAT Mòbil).</p>
+            <p><strong>Signatura:</strong> Serveix per acreditar la voluntat en un acte administratiu (ex: signar una sol·licitud o una acta d'examen).</p>
+            <p><em>Pregunta freqüent:</em> "Totes les signatures electròniques tenen valor de signatura manuscrita?" Resposta: Només la <strong>Qualificada</strong>.</p>
+        </section>
+
+        <section>
+            <h2>3. El Certificat Digital</h2>
+            <div class="box-constitucio">
+                Un certificat electrònic és un document signat electrònicament per un <strong>Prestador de Serveis de Confiança</strong> que vincula unes dades de verificació de signatura amb un signatari.
+            </div>
+            <ul>
+                <li><strong>Certificat de Persona Física:</strong> Identifica a un ciutadà (ex: DNIe, FNMT, idCAT).</li>
+                <li><strong>Certificat de Representant:</strong> Identifica a una persona com a representant d'una entitat jurídica.</li>
+                <li><strong>Segell Electrònic:</strong> Utilitzat per les Administracions per a actuacions automatitzades (sense intervenció humana directa).</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>4. Eines de l'Administració a Espanya i Catalunya</h2>
+            <p>Punts que solen sortir en tests relacionats amb la pràctica diària a la UB:</p>
+            <ul>
+                <li><strong>Cl@ve:</strong> Sistema estatal d'identificació (Pin, Permanent i Firma).</li>
+                <li><strong>idCAT Mòbil:</strong> Sistema de la Generalitat basat en l'enviament d'un codi al mòbil (molt usat a Catalunya).</li>
+                <li><strong>Valid:</strong> Servei del Consorci AOC per validar la validesa de signatures i certificats.</li>
+            </ul>
+        </section>
+
+        <section class="test-alert">
+            <h3>🔍 Particularitat UB</h3>
+            <p>La UB emet certificats per al seu personal i utilitza sistemes de signatura centralitzats per garantir que els documents administratius (expedients, contractes, certificats acadèmics) tinguin plena validesa jurídica i permanència en el temps.</p>
+        </section>
+
+        <footer>© 2025 Oposició UB 2026 - Tema 8 preparat</footer>
+    </div>
+</body>
+</html>

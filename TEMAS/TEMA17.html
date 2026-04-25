@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tema 17: Microsoft Word 2024 (ACTIC I i II) - UB</title>
+    <style>
+        :root {
+            --ub-blue: #003058;
+            --ub-red: #e30613;
+            --word-blue: #2b579a;
+            --light-bg: #f8fafc;
+            --text-dark: #1e293b;
+        }
+
+        body {
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: var(--text-dark);
+            background-color: var(--light-bg);
+            margin: 0;
+            padding: 0;
+        }
+
+        .btn-inici {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            background-color: #000;
+            color: #fff;
+            padding: 12px 20px;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: bold;
+            font-size: 14px;
+            z-index: 1000;
+            border: 1px solid rgba(255,255,255,0.3);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .container {
+            max-width: 850px;
+            margin: 100px auto 40px;
+            background: #fff;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+            border-top: 10px solid var(--word-blue);
+        }
+
+        header {
+            text-align: center;
+            border-bottom: 2px solid #f1f5f9;
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+        }
+
+        h1 {
+            color: var(--word-blue);
+            font-size: 2.2rem;
+            margin: 0;
+        }
+
+        h2 {
+            color: var(--word-blue);
+            border-left: 6px solid var(--ub-red);
+            padding: 10px 0 10px 15px;
+            margin-top: 40px;
+            font-size: 1.6rem;
+            background: #f8fafc;
+        }
+
+        h3 {
+            color: var(--ub-blue);
+            margin-top: 25px;
+            border-bottom: 1px solid #e2e8f0;
+            padding-bottom: 5px;
+        }
+
+        .box-info {
+            background-color: #f1f5f9;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 20px 0;
+            border: 1px solid #e2e8f0;
+        }
+
+        .important { color: var(--ub-red); font-weight: bold; }
+
+        .test-alert {
+            background-color: #f0f7ff;
+            border: 2px dashed var(--word-blue);
+            padding: 20px;
+            margin: 25px 0;
+            border-radius: 8px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 25px 0;
+        }
+
+        th, td {
+            text-align: left;
+            padding: 12px;
+            border-bottom: 1px solid #e2e8f0;
+        }
+
+        th { background-color: var(--word-blue); color: white; }
+
+        .skill-level {
+            display: inline-block;
+            background: var(--ub-blue);
+            color: white;
+            padding: 2px 10px;
+            border-radius: 4px;
+            font-size: 0.8rem;
+            margin-bottom: 10px;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 60px;
+            padding-top: 20px;
+            border-top: 1px solid #e2e8f0;
+            color: #94a3b8;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+
+    <a href="../index.html" class="btn-inici"><span>←</span> Tornar a l'inici</a>
+
+    <div class="container">
+        <header>
+            <h1>Tema 17: Microsoft Word 2024</h1>
+            <p>Processament de textos (Equivalència ACTIC Nivells 1 i 2)</p>
+        </header>
+
+        <section>
+            <span class="skill-level">Nivell I (Competència C4 - Nivell 1 ACTIC)</span>
+            <h2>1. Fonaments i Format de Documents</h2>
+            <div class="box-info">
+                El format bàsic defineix l'aparença del text i l'estructura del document per garantir la llegibilitat.
+            </div>
+            <ul>
+                <li><strong>Estils:</strong> Ús de la galeria d'estils (Títol 1, Normal) per mantenir la jerarquia i coherència. Permet generar índexs automàtics.</li>
+                <li><strong>Format de font:</strong> Tipus (Calibri, Arial), mides (punts), negreta, cursiva i subratllat.</li>
+                <li><strong>Paràgraf:</strong> Alineacions (esquerra, dreta, centre, <span class="important">justificat</span>) i interlineat (espai entre línies).</li>
+                <li><strong>Llistes:</strong> Creació de vinyetes (pics), llistes numerades i multinivell (esquemes).</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>2. Taules i Organització</h2>
+            <p>Les taules permeten estructurar dades de forma visual a Word.</p>
+            <ul>
+                <li><strong>Inserció:</strong> Des de la pestanya "Inserir", definint files i columnes.</li>
+                <li><strong>Estils de taula:</strong> Aplicació de dissenys predefinits (colors, vores).</li>
+                <li><strong>Configuració:</strong> Ajustar la mida de les cel·les i l'alineació del text dins de la cel·la.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>3. Edició Col·laborativa i Revisió</h2>
+            <div class="test-alert">
+                <strong>Control de canvis:</strong> Permet registrar totes les edicions fetes al document (quién, què i quan). Imprescindible en el treball administratiu universitari.
+            </div>
+            <ul>
+                <li><strong>Ortografia i gramàtica:</strong> Ús del corrector automàtic i l'Editor de Word.</li>
+                <li><strong>Comentaris:</strong> Inserir notes per a altres revisors sense modificar el text principal.</li>
+                <li><strong>Compartició:</strong> Integració amb <span class="important">OneDrive</span> i <span class="important">Teams</span> per a l'edició en temps real.</li>
+            </ul>
+        </section>
+
+        <hr>
+
+        <section>
+            <span class="skill-level">Nivell II (Competència C4 - Nivell 2 ACTIC)</span>
+            <h2>4. Funcions Avançades de Word</h2>
+            
+            <h3>Taules Avançades</h3>
+            <ul>
+                <li><strong>Combinar/Dividir:</strong> Unir diverses cel·les en una sola o fragmentar-ne una.</li>
+                <li><strong>Càlculs:</strong> Ús de fórmules bàsiques (<code>=SUM(ABOVE)</code>) dins de les taules.</li>
+                <li><strong>Ordenació:</strong> Ordenar dades alfabèticament o numèricament.</li>
+            </ul>
+
+            <h3>Referències i Índexs</h3>
+            <p>Automatització de documents llargs (memòries acadèmiques, reglaments):</p>
+            <ul>
+                <li><strong>Taula de continguts:</strong> Generació automàtica basada en els Estils de Títol.</li>
+                <li><strong>Notes al peu:</strong> Referències a la part inferior de la pàgina.</li>
+                <li><strong>Referències creuades:</strong> Enllaços interns que s'actualitzen sols (ex: "Veure taula 1 a la pàg. 4").</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>5. Automatització i Output Especialitzat</h2>
+            <h3>Combinar Correspondència</h3>
+            <div class="box-info">
+                Procés per crear cartes, sobres o correus massius personalitzats utilitzant una font de dades (Excel, Access o contactes de l'Outlook).
+            </div>
+
+            <h3>Plantilles i Formularis</h3>
+            <ul>
+                <li><strong>Plantilles (.dotx):</strong> Documents base amb format i estils ja definits per estalviar temps.</li>
+                <li><strong>Controls de contingut:</strong> Inserció de quadres de text, llistes desplegables i selectors de data per crear formularis editables.</li>
+            </ul>
+        </section>
+
+        <section class="test-alert">
+            <h3>⚠️ Alerta Examen: Exportació i Impressió</h3>
+            <ul>
+                <li><strong>PDF:</strong> Exportar per garantir que el format no canviï en obrir-lo en altres dispositius.</li>
+                <li><strong>Configuració de pàgina:</strong> Marges (Normal, Estret, Personalitzat) i Orientació (Vertical/Horitzontal).</li>
+                <li><strong>Salts:</strong> Diferència entre salt de pàgina i <span class="important">salt de secció</span> (necessari per canviar l'orientació només d'una part del document).</li>
+            </ul>
+        </section>
+
+        <footer>© 2025 Oposició UB 2026 - Tema 17 preparat</footer>
+    </div>
+</body>
+</html>

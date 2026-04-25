@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Test Interactivo</title>
+  <link rel="stylesheet" href="teststyles.css"/>
+  <style>
+    /* Botones fijados en la parte superior */
+    #back-button, #reset-test-button {
+      position: fixed;
+      top: 12px;
+      z-index: 2000;
+      padding: 10px 15px;
+      border-radius: 6px;
+      cursor: pointer;
+      font-weight: 600;
+      border: none;
+      color: white;
+      font-family: Arial, sans-serif;
+      transition: background 0.2s;
+    }
+
+    #back-button {
+      left: 12px;
+      background-color: #000000;
+    }
+
+    /* El botón de reiniciar al lado del de volver */
+    #reset-test-button {
+      left: 155px; 
+      background-color: #e74c3c;
+    }
+
+    #back-button:hover { background-color: #333; }
+    #reset-test-button:hover { background-color: #c0392b; }
+
+    /* Ajuste para que el título no quede debajo de los botones */
+    .container {
+      margin-top: 60px;
+    }
+
+    /* Media query para móviles */
+    @media (max-width: 420px) {
+      #back-button, #reset-test-button {
+        padding: 8px 10px;
+        font-size: 0.8rem;
+      }
+      #reset-test-button { left: 115px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>TEST MODEL B - 2009</h1>
+    
+    <!-- NUEVO: contador de respuestas -->
+    <div id="response-counter" class="sticky-counter">Respostes: 0/0</div>
+
+    <div id="progress-bar">
+      <div id="progress"></div>
+    </div>
+
+    <!-- Se oculta hasta que se corrija -->
+    <div id="score" style="display: none;">0/0 correctes</div>
+
+    <form id="test-form"></form>
+    <button id="submit">Corregir</button>
+
+    <!-- 🔹 Botón nuevo (fijo arriba a la izquierda) -->
+    <button id="back-button" onclick="window.location.href='../index.html'">⬅ Tornar al inici</button>
+    <button id="reset-test-button" onclick="reiniciarTest()">🔄 Reiniciar Test</button>
+  </div>
+
+  <script src="model_2009_b.js"></script>
+</body>
+</html>

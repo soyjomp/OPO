@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tema 13: El PTGAS i la Provisió de Llocs de Treball - UB</title>
+    <style>
+        :root {
+            --ub-blue: #003058;
+            --ub-red: #e30613;
+            --light-bg: #f8fafc;
+            --text-dark: #1e293b;
+        }
+
+        body {
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: var(--text-dark);
+            background-color: var(--light-bg);
+            margin: 0;
+            padding: 0;
+        }
+
+        .btn-inici {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            background-color: #000;
+            color: #fff;
+            padding: 12px 20px;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: bold;
+            font-size: 14px;
+            z-index: 1000;
+            border: 1px solid rgba(255,255,255,0.3);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .btn-inici:hover {
+            background-color: #333;
+            transform: translateX(-3px);
+        }
+
+        .container {
+            max-width: 850px;
+            margin: 100px auto 40px;
+            background: #fff;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+            border-top: 10px solid var(--ub-blue);
+        }
+
+        header {
+            text-align: center;
+            border-bottom: 2px solid #f1f5f9;
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+        }
+
+        h1 {
+            color: var(--ub-blue);
+            font-size: 2.2rem;
+            margin: 0;
+        }
+
+        h2 {
+            color: var(--ub-blue);
+            border-left: 6px solid var(--ub-red);
+            padding: 10px 0 10px 15px;
+            margin-top: 40px;
+            font-size: 1.6rem;
+            background: #f8fafc;
+        }
+
+        .box-constitucio {
+            background-color: #f1f5f9;
+            border-radius: 8px;
+            padding: 25px;
+            margin: 20px 0;
+            border: 1px solid #e2e8f0;
+        }
+
+        .important { color: var(--ub-red); font-weight: bold; }
+
+        .test-alert {
+            background-color: #fffbeb;
+            border: 2px dashed #f59e0b;
+            padding: 20px;
+            margin: 25px 0;
+            border-radius: 8px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 25px 0;
+        }
+
+        th, td {
+            text-align: left;
+            padding: 15px;
+            border-bottom: 1px solid #e2e8f0;
+        }
+
+        th { background-color: var(--ub-blue); color: white; }
+
+        footer {
+            text-align: center;
+            margin-top: 60px;
+            padding-top: 20px;
+            border-top: 1px solid #e2e8f0;
+            color: #94a3b8;
+            font-size: 0.9rem;
+        }
+
+        .highlight-text {
+            background: #fef2f2;
+            padding: 2px 5px;
+            border-radius: 4px;
+            color: var(--ub-red);
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+
+    <a href="../index.html" class="btn-inici"><span>←</span> Tornar a l'inici</a>
+
+    <div class="container">
+        <header>
+            <h1>Tema 13: El Personal Tècnic, de Gestió i d'Administració i Serveis (PTGAS)</h1>
+        </header>
+
+        <section>
+            <h2>1. Definició i Funcions del PTGAS</h2>
+            <div class="box-constitucio">
+                Segons la <strong>LOSU</strong> (Llei Orgànica del Sistema Universitari), el PTGAS és el sector de la comunitat universitària al qual corresponen les funcions de gestió, suport, assistència i assessorament.
+            </div>
+            <ul>
+                <li><strong>Funcions:</strong> Gestió acadèmica i administrativa, suport a la docència i recerca, manteniment d'instal·lacions, serveis informàtics i econòmics.</li>
+                <li><strong>Composició:</strong> Personal <strong>funcionari</strong> de les escales pròpies de la universitat i personal <strong>laboral</strong>.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>2. Selecció de Personal</h2>
+            <p>L'accés a les places de PTGAS es realitza d'acord amb l'Oferta Pública d'Ocupació (OPO) aprovada anualment pel Consell de Govern de la UB.</p>
+            <table>
+                <thead>
+                    <tr><th>Sistema</th><th>Descripció</th></tr>
+                </thead>
+                <tbody>
+                    <tr><td><strong>Oposició</strong></td><td>Realització d'una o diverses proves per determinar la capacitat dels aspirants.</td></tr>
+                    <tr><td><strong>Concurs-Oposició</strong></td><td>Combinació de proves (fase oposició) i valoració de mèrits (fase concurs: experiència, formació). <span class="highlight-text">És el sistema més habitual.</span></td></tr>
+                    <tr><td><strong>Concurs</strong></td><td>Valoració exclusiva de mèrits (només en casos excepcionals autoritzats per llei).</td></tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section class="test-alert">
+            <h3>⚠️ Alerta Examen: Principis de Selecció</h3>
+            <p>Tots els processos de selecció han de garantir estrictament els principis de:</p>
+            <ul>
+                <li><strong>Igualtat, Mèrit i Capacitat.</strong></li>
+                <li><strong>Publicitat</strong> de les convocatòries i de les seves bases.</li>
+                <li><strong>Transparència</strong> i imparcialitat dels membres dels òrgans de selecció.</li>
+                <li><strong>Agilitat</strong>, sense perjudici de l'objectivitat.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>3. Sistemes de Provisió de Llocs de Treball</h2>
+            <p>Un cop ja s'és funcionari de carrera, la mobilitat i l'assignació de llocs definitius es fa mitjançant:</p>
+            <ul>
+                <li><strong>Concurs:</strong> Sistema normal de provisió. Es valoren els mèrits establerts a la convocatòria (antiguitat, grau personal, cursos, etc.).</li>
+                <li><strong>Lliure Designació:</strong> Per a llocs d'especial responsabilitat o confiança (ex: caps de secretaria de facultat de nivell alt). Es basa en la discrecionalitat de l'òrgan competent entre els qui compleixen els requisits.</li>
+            </ul>
+        </section>
+
+        <section class="test-alert">
+            <h3>🔍 La Mobilitat a les Universitats</h3>
+            <p>La LOSU fomenta la mobilitat del PTGAS entre universitats públiques mitjançant convenis de reciprocitat. A la UB, la provisió també contempla la <strong>Promoció Interna</strong> (vertical o horitzontal), permetent l'ascens de subgrup (ex: de C1 a A2).</p>
+        </section>
+
+        <section>
+            <h2>4. Estructura de l'escala administrativa a la UB</h2>
+            <p>El PTGAS s'organitza segons la <strong>Relació de Llocs de Treball (RLT)</strong>, que identifica:</p>
+            <ul>
+                <li>La denominació del lloc.</li>
+                <li>El grup o subgrup de classificació.</li>
+                <li>El sistema de provisió (concurs o lliure designació).</li>
+                <li>Les retribucions complementàries (Complement de Destinació i Específic).</li>
+            </ul>
+        </section>
+
+        <footer>© 2025 Oposició UB 2026 - Tema 13 preparat</footer>
+    </div>
+</body>
+</html>

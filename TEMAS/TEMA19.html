@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tema 19: Llibre d'estil UB - Documents Administratius</title>
+    <style>
+        :root {
+            --ub-blue: #003058;
+            --ub-red: #e30613;
+            --light-bg: #f8fafc;
+            --text-dark: #1e293b;
+            --doc-gold: #b45309;
+        }
+
+        body {
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: var(--text-dark);
+            background-color: var(--light-bg);
+            margin: 0;
+            padding: 0;
+        }
+
+        .btn-inici {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            background-color: #000;
+            color: #fff;
+            padding: 12px 20px;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: bold;
+            font-size: 14px;
+            z-index: 1000;
+            border: 1px solid rgba(255,255,255,0.3);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .container {
+            max-width: 850px;
+            margin: 100px auto 40px;
+            background: #fff;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+            border-top: 10px solid var(--doc-gold);
+        }
+
+        header {
+            text-align: center;
+            border-bottom: 2px solid #f1f5f9;
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+        }
+
+        h1 {
+            color: var(--ub-blue);
+            font-size: 2.2rem;
+            margin: 0;
+        }
+
+        .slogan {
+            font-style: italic;
+            color: #64748b;
+            font-size: 1.1rem;
+            display: block;
+            margin-top: 10px;
+        }
+
+        h2 {
+            color: var(--ub-blue);
+            border-left: 6px solid var(--ub-red);
+            padding: 10px 0 10px 15px;
+            margin-top: 40px;
+            font-size: 1.6rem;
+            background: #f8fafc;
+        }
+
+        h3 {
+            color: var(--doc-gold);
+            margin-top: 25px;
+            border-bottom: 1px solid #e2e8f0;
+            padding-bottom: 5px;
+        }
+
+        .box-info {
+            background-color: #fefce8;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 20px 0;
+            border: 1px solid #fef08a;
+        }
+
+        .important { color: var(--ub-red); font-weight: bold; }
+
+        .test-alert {
+            background-color: #fff7ed;
+            border: 2px dashed var(--doc-gold);
+            padding: 20px;
+            margin: 25px 0;
+            border-radius: 8px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 25px 0;
+        }
+
+        th, td {
+            text-align: left;
+            padding: 12px;
+            border-bottom: 1px solid #e2e8f0;
+        }
+
+        th { background-color: var(--ub-blue); color: white; }
+
+        .doc-type {
+            font-weight: bold;
+            color: var(--ub-blue);
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 60px;
+            padding-top: 20px;
+            border-top: 1px solid #e2e8f0;
+            color: #94a3b8;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+
+    <a href="../index.html" class="btn-inici"><span>←</span> Tornar a l'inici</a>
+
+    <div class="container">
+        <header>
+            <h1>Tema 19: Llibre d'estil de la UB (CUB)</h1>
+            <span class="slogan">"Tant de bo que la plaça arribi tan de pressa com un desig al bufar les espelmes!"</span>
+            <p>Documents administratius generals i criteris lingüístics</p>
+        </header>
+
+        <section>
+            <h2>1. L'Estil Administratiu a la UB</h2>
+            <div class="box-info">
+                La renovació del llenguatge administratiu busca racionalitzar, clarificar i acostar la institució a la ciutadania amb un llenguatge <strong>clar i planer</strong>.
+            </div>
+            <ul>
+                <li><strong>Objectivitat:</strong> Tractament igualitari i respectuós.</li>
+                <li><strong>Tractament de vós:</strong> Ús generalitzat de la segona persona del plural per a la persona administrada.</li>
+                <li><strong>Claredat i concisió:</strong> Evitar frases excessivament llargues, l'ús sistemàtic de la passiva i repeticions innecessàries.</li>
+                <li><strong>Coherència:</strong> Ús de la <strong>primera persona</strong> en les formes verbals per part de l'emissor, datació unificada i ús d'abreviatures normalitzades.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>2. Classificació dels Documents Administratius</h2>
+            
+            <h3>A. Documents de Transmissió</h3>
+            <table>
+                <thead>
+                    <tr><th>Document</th><th>Definició i Característiques</th></tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="doc-type">Anunci</td>
+                        <td>Fa pública una notícia d'interès general. Mides variables segons el mitjà de publicació.</td>
+                    </tr>
+                    <tr>
+                        <td class="doc-type">Avís</td>
+                        <td>Dona notícia d'un fet (interrupcions, canvis d'horari, exàmens) perquè les persones actuïn en conseqüència. Mida <strong>ISO A4</strong> (v/h). No previst en el procediment administratiu formal.</td>
+                    </tr>
+                    <tr>
+                        <td class="doc-type">Carta</td>
+                        <td>Comunicació interpersonal de contingut divers. No prevista en la tramitació administrativa. Mides <strong>ISO A4 o A5</strong>.</td>
+                    </tr>
+                    <tr>
+                        <td class="doc-type">Ofici</td>
+                        <td>Comunicació formal entre òrgans administratius o entre l'Administració i entitats/ciutadans.</td>
+                    </tr>
+                    <tr>
+                        <td class="doc-type">Notificació</td>
+                        <td>Document que comunica formalment una resolució o acte administratiu a l'interessat.</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>B. Documents de Convocatòria</h3>
+            <ul>
+                <li><strong>Citació:</strong> Requereix la presència d'una persona en un lloc, dia i hora determinats.</li>
+                <li><strong>Convocatòria de reunió:</strong> Crida els membres d'un òrgan col·legiat a una sessió de treball (inclou l'ordre del dia).</li>
+            </ul>
+
+            <h3>C. Documents de Constància</h3>
+            <ul>
+                <li><strong>Acta de reunió:</strong> Recull el que s'ha tractat i acordat en una reunió.</li>
+                <li><strong>Certificat:</strong> Document que dóna fe d'un fet o d'una dada continguda en un llibre o expedient.</li>
+                <li><strong>Diligència:</strong> Deixa constància de l'execució d'un acte o d'un fet administratiu.</li>
+            </ul>
+
+            <h3>D. Documents de Decisió i Valoració</h3>
+            <ul>
+                <li><strong>Informe:</strong> Document de valoració tècnica o administrativa que serveix de base per a una decisió.</li>
+                <li><strong>Resolució:</strong> Document en què l'autoritat administrativa decideix sobre un procediment.</li>
+                <li><strong>Instrucció:</strong> Dicta pautes de funcionament intern per a unitats o personal.</li>
+                <li><strong>Conveni:</strong> Acord entre la UB i altres entitats (públiques o privades).</li>
+            </ul>
+
+            <h3>E. Documents de Petició</h3>
+            <ul>
+                <li><strong>Sol·licitud / Petició:</strong> Document amb el qual una persona s'adreça a l'Administració per demanar un dret o servei.</li>
+                <li><strong>Recurs:</strong> Impugnació d'un acte administratiu que l'interessat considera incorrecte.</li>
+                <li><strong>Declaració jurada:</strong> Manifestació personal sota jurament o promesa.</li>
+            </ul>
+        </section>
+
+        <section class="test-alert">
+            <h3>⚠️ Alerta Examen: Diferències Clau</h3>
+            <p><strong>Anunci vs. Avís:</strong> L'avís és més breu, menys formal i sol referir-se a canvis immediats (horaris, suspensions). L'anunci és per a notícies d'interès general més ampli.</p>
+            <p><strong>Tractament:</strong> La UB aposta per la <strong>simplicitat</strong>. En català, s'utilitza preferentment el tractament de <strong>vós</strong> (no viquè) per a la comunicació institucional externa.</p>
+            <p><strong>Normalització:</strong> Tots els models segueixen la <strong>imatge corporativa</strong> de la UB i les normes internacionals ISO de mides de paper.</p>
+        </section>
+
+        <footer>© 2025 Oposició UB 2026 - Tema 19 preparat (Llibre d'estil)</footer>
+    </div>
+</body>
+</html>

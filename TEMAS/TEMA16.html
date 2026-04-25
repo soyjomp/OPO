@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tema 16: Igualtat i Pla d'Igualtat - UB</title>
+    <style>
+        :root {
+            --ub-blue: #003058;
+            --ub-red: #e30613;
+            --light-bg: #f8fafc;
+            --text-dark: #1e293b;
+        }
+
+        body {
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: var(--text-dark);
+            background-color: var(--light-bg);
+            margin: 0;
+            padding: 0;
+        }
+
+        .btn-inici {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            background-color: #000;
+            color: #fff;
+            padding: 12px 20px;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: bold;
+            font-size: 14px;
+            z-index: 1000;
+            border: 1px solid rgba(255,255,255,0.3);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .btn-inici:hover {
+            background-color: #333;
+            transform: translateX(-3px);
+        }
+
+        .container {
+            max-width: 850px;
+            margin: 100px auto 40px;
+            background: #fff;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+            border-top: 10px solid var(--ub-blue);
+        }
+
+        header {
+            text-align: center;
+            border-bottom: 2px solid #f1f5f9;
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+        }
+
+        h1 {
+            color: var(--ub-blue);
+            font-size: 2.2rem;
+            margin: 0;
+        }
+
+        h2 {
+            color: var(--ub-blue);
+            border-left: 6px solid var(--ub-red);
+            padding: 10px 0 10px 15px;
+            margin-top: 40px;
+            font-size: 1.6rem;
+            background: #f8fafc;
+        }
+
+        .box-constitucio {
+            background-color: #f1f5f9;
+            border-radius: 8px;
+            padding: 25px;
+            margin: 20px 0;
+            border: 1px solid #e2e8f0;
+        }
+
+        .important { color: var(--ub-red); font-weight: bold; }
+
+        .test-alert {
+            background-color: #fffbeb;
+            border: 2px dashed #f59e0b;
+            padding: 20px;
+            margin: 25px 0;
+            border-radius: 8px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 25px 0;
+        }
+
+        th, td {
+            text-align: left;
+            padding: 12px;
+            border-bottom: 1px solid #e2e8f0;
+        }
+
+        th { background-color: var(--ub-blue); color: white; }
+
+        footer {
+            text-align: center;
+            margin-top: 60px;
+            padding-top: 20px;
+            border-top: 1px solid #e2e8f0;
+            color: #94a3b8;
+            font-size: 0.9rem;
+        }
+
+        .list-eixos {
+            list-style: none;
+            padding: 0;
+        }
+
+        .list-eixos li {
+            background: #fff;
+            margin-bottom: 10px;
+            padding: 15px;
+            border-radius: 8px;
+            border-left: 4px solid var(--ub-blue);
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        }
+    </style>
+</head>
+<body>
+
+    <a href="../index.html" class="btn-inici"><span>←</span> Tornar a l'inici</a>
+
+    <div class="container">
+        <header>
+            <h1>Tema 16: Igualtat i el III Pla d'Igualtat de la UB</h1>
+        </header>
+
+        <section>
+            <h2>1. Marc Normatiu i Institucional (Punt 3 del Pla)</h2>
+            <div class="box-constitucio">
+                La igualtat efectiva de dones i homes és un principi jurídic universal. A la UB, el marc es fonamenta en la normativa internacional, estatal i autonòmica.
+            </div>
+            <ul>
+                <li><strong>Àmbit Estatal:</strong> Llei Orgànica 3/2007 per a la igualtat efectiva de dones i homes.</li>
+                <li><strong>Àmbit Català:</strong> Llei 17/2015 d'igualtat efectiva de dones i homes.</li>
+                <li><strong>Àmbit Universitari:</strong> La <strong>LOSU</strong> estableix l'obligatorietat de tenir Unitats d'Igualtat i Plans d'Igualtat.</li>
+                <li><strong>Institucional UB:</strong> L'Estatut de la UB i la <strong>Unitat d'Igualtat</strong> (creada el 2008), que coordina les polítiques i les comissions d'igualtat de centre.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>2. El Pla: Eixos i Accions (Punt 5 del Pla)</h2>
+            <p>El III Pla d'Igualtat de la UB s'estructura en eixos estratègics que agrupen accions específiques:</p>
+            
+            <ul class="list-eixos">
+                <li><strong>Eix 1: Promoció de la cultura d'igualtat.</strong> Accions de sensibilització, formació i comunicació no sexista.</li>
+                <li><strong>Eix 2: Promoció de la igualtat en el treball (PTGAS i PDI).</strong> Accés, selecció, promoció professional, retribucions i infraestructures.</li>
+                <li><strong>Eix 3: Promoció de la igualtat en la docència i la recerca.</strong> Introducció de la perspectiva de gènere en els plans d'estudis i foment de la recerca de dones.</li>
+                <li><strong>Eix 4: Participació i representació.</strong> Garantir la presència equilibrada en òrgans de govern i comissions.</li>
+                <li><strong>Eix 5: Conciliació i corresponsabilitat.</strong> Millora de les mesures de flexibilitat per a la vida personal i laboral.</li>
+                <li><strong>Eix 6: Prevenció i actuació davant les violències masclistes.</strong> Protocol contra l'assetjament sexual i per raó de gènere.</li>
+            </ul>
+        </section>
+
+        <section class="test-alert">
+            <h3>⚠️ Alerta Examen: Conceptes Clau</h3>
+            <ul>
+                <li><strong>Bretxa salarial:</strong> Diferència en la mitjana de retribucions que sovint es deu a complements o segregació horitzontal/vertical.</li>
+                <li><strong>Segregació vertical (Sostre de vidre):</strong> Dificultat de les dones per accedir a càrrecs directius o escalafons alts (ex: Catedràtiques).</li>
+                <li><strong>Segregació horitzontal:</strong> Concentració de gèneres en àrees específiques (ex: Enginyeries vs Ciències de l'Educació).</li>
+                <li><strong>Unitat d'Igualtat:</strong> És l'òrgan administratiu encarregat de vetllar pel compliment del Pla.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>3. El Protocol contra l'Assetjament</h2>
+            <p>Una acció transversal del Pla és el protocol que protegeix tota la comunitat universitària contra:</p>
+            <ul>
+                <li><strong>Assetjament sexual:</strong> Conducta de caràcter sexual no desitjada.</li>
+                <li><strong>Assetjament per raó de gènere:</strong> Conducta discriminatòria pel fet de ser dona o per l'orientació/identitat sexual.</li>
+            </ul>
+        </section>
+
+        <footer>© 2025 Oposició UB 2026 - Tema 16 preparat</footer>
+    </div>
+</body>
+</html>

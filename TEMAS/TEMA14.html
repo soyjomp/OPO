@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tema 14: Personal Docent i Investigador (PDI) - UB</title>
+    <style>
+        :root {
+            --ub-blue: #003058;
+            --ub-red: #e30613;
+            --light-bg: #f8fafc;
+            --text-dark: #1e293b;
+        }
+
+        body {
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: var(--text-dark);
+            background-color: var(--light-bg);
+            margin: 0;
+            padding: 0;
+        }
+
+        .btn-inici {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            background-color: #000;
+            color: #fff;
+            padding: 12px 20px;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: bold;
+            font-size: 14px;
+            z-index: 1000;
+            border: 1px solid rgba(255,255,255,0.3);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .btn-inici:hover {
+            background-color: #333;
+            transform: translateX(-3px);
+        }
+
+        .container {
+            max-width: 850px;
+            margin: 100px auto 40px;
+            background: #fff;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+            border-top: 10px solid var(--ub-blue);
+        }
+
+        header {
+            text-align: center;
+            border-bottom: 2px solid #f1f5f9;
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+        }
+
+        h1 {
+            color: var(--ub-blue);
+            font-size: 2.2rem;
+            margin: 0;
+        }
+
+        h2 {
+            color: var(--ub-blue);
+            border-left: 6px solid var(--ub-red);
+            padding: 10px 0 10px 15px;
+            margin-top: 40px;
+            font-size: 1.6rem;
+            background: #f8fafc;
+        }
+
+        .box-constitucio {
+            background-color: #f1f5f9;
+            border-radius: 8px;
+            padding: 25px;
+            margin: 20px 0;
+            border: 1px solid #e2e8f0;
+        }
+
+        .important { color: var(--ub-red); font-weight: bold; }
+
+        .test-alert {
+            background-color: #fffbeb;
+            border: 2px dashed #f59e0b;
+            padding: 20px;
+            margin: 25px 0;
+            border-radius: 8px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 25px 0;
+        }
+
+        th, td {
+            text-align: left;
+            padding: 12px;
+            border-bottom: 1px solid #e2e8f0;
+        }
+
+        th { background-color: var(--ub-blue); color: white; }
+
+        .badge-func { background: #dcfce7; color: #166534; padding: 2px 8px; border-radius: 4px; font-size: 0.8rem; font-weight: bold; }
+        .badge-lab { background: #dbeafe; color: #1e40af; padding: 2px 8px; border-radius: 4px; font-size: 0.8rem; font-weight: bold; }
+
+        footer {
+            text-align: center;
+            margin-top: 60px;
+            padding-top: 20px;
+            border-top: 1px solid #e2e8f0;
+            color: #94a3b8;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+
+    <a href="../index.html" class="btn-inici"><span>←</span> Tornar a l'inici</a>
+
+    <div class="container">
+        <header>
+            <h1>Tema 14: Personal Docent i Investigador (PDI)</h1>
+        </header>
+
+        <section>
+            <h2>1. Definició i Marc Normatiu</h2>
+            <div class="box-constitucio">
+                El <strong>Personal Docent i Investigador (PDI)</strong> és el conjunt de persones que tenen com a funcions principals la recerca, la transferència del coneixement i la docència. Es regeixen per la <strong>LOSU</strong> (Llei Orgànica 2/2023) i els Estatuts de la UB.
+            </div>
+            <ul>
+                <li><strong>Dedicació:</strong> Pot ser a temps complet o a temps parcial.</li>
+                <li><strong>Capacitat docent i investigadora:</strong> Els doctors tenen plena capacitat.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>2. PDI Funcionari (Cossos Docents Universitaris)</h2>
+            <p>Són funcionaris de carrera de l'Estat (Grup A1). Les categories són:</p>
+            <table>
+                <thead>
+                    <tr><th>Categoria</th><th>Requisits Clau</th></tr>
+                </thead>
+                <tbody>
+                    <tr><td><strong>Catedràtic/a d'Universitat</strong></td><td>Doctorat + Acreditació d'ANECA per a Catedràtic.</td></tr>
+                    <tr><td><strong>Professor/a Titular d'Universitat</strong></td><td>Doctorat + Acreditació d'ANECA per a Titular.</td></tr>
+                </tbody>
+            </table>
+            <p><span class="badge-func">Dada d'examen:</span> L'accés es realitza mitjançant concurs convocat per la Universitat, prèvia acreditació estatal.</p>
+        </section>
+
+        <section>
+            <h2>3. PDI Laboral (Contractat)</h2>
+            <p>Sota la nova LOSU, les categories principals de personal laboral contractat de forma estable o temporal són:</p>
+            <table>
+                <thead>
+                    <tr><th>Categoria</th><th>Tipus / Requisits</th></tr>
+                </thead>
+                <tbody>
+                    <tr><td><strong>Professorat Permanent Laboral</strong></td><td><span class="badge-lab">Indefinit</span> Doctorat + Acreditació prèvia. Substitueix l'antic "Contractat Doctor".</td></tr>
+                    <tr><td><strong>Professorat Ajudant Doctor</strong></td><td><span class="badge-lab">Temporal (6 anys)</span> Doctorat. Accés a carrera acadèmica. No requereix acreditació prèvia per entrar, però sí per estabilitzar-se.</td></tr>
+                    <tr><td><strong>Professorat Associat</strong></td><td><span class="badge-lab">Temporal</span> Especialistes de reconeguda competència que exerceixen la seva activitat professional fora de l'àmbit acadèmic.</td></tr>
+                    <tr><td><strong>Professorat Visitant</strong></td><td><span class="badge-lab">Temporal</span> Professors o investigadors de prestigi d'altres universitats.</td></tr>
+                    <tr><td><strong>Professorat Emèrit</strong></td><td>Jubilats que han prestat serveis destacats a la universitat.</td></tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section class="test-alert">
+            <h3>⚠️ Alerta Examen LOSU: Percentatges</h3>
+            <p>La LOSU imposa límits importants per evitar la precarietat:</p>
+            <ul>
+                <li>El personal docent i investigador amb contracte <strong>temporal</strong> no pot superar el <span class="important">8%</span> de la plantilla de PDI (en hores).</li>
+                <li>El personal <strong>funcionari</strong> ha de ser com a mínim el <span class="important">51%</span> del total del PDI (en hores).</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>4. Altres figures i recerca</h2>
+            <ul>
+                <li><strong>Investigadors/es Postdoctorals:</strong> Contractats sota la Llei de la Ciència (ex: Maria Zambrano, Margarita Salas).</li>
+                <li><strong>Personal Investigador en formació:</strong> Estudiants de doctorat amb contracte predoctoral.</li>
+            </ul>
+        </section>
+
+        <section class="test-alert">
+            <h3>🔍 Selecció de PDI a la UB</h3>
+            <p>La selecció es fa mitjançant concurs públic. Les comissions de selecció han d'estar formades majoritàriament per membres externs a la UB i s'ha de garantir la paritat de gènere en la seva composició.</p>
+        </section>
+
+        <footer>© 2025 Oposició UB 2026 - Tema 14 preparat</footer>
+    </div>
+</body>
+</html>

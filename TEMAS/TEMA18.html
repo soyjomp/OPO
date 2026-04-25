@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tema 18: Microsoft Excel 2024 (ACTIC I i II) - UB</title>
+    <style>
+        :root {
+            --ub-blue: #003058;
+            --ub-red: #e30613;
+            --excel-green: #217346;
+            --light-bg: #f8fafc;
+            --text-dark: #1e293b;
+        }
+
+        body {
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: var(--text-dark);
+            background-color: var(--light-bg);
+            margin: 0;
+            padding: 0;
+        }
+
+        .btn-inici {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            background-color: #000;
+            color: #fff;
+            padding: 12px 20px;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: bold;
+            font-size: 14px;
+            z-index: 1000;
+            border: 1px solid rgba(255,255,255,0.3);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .container {
+            max-width: 850px;
+            margin: 100px auto 40px;
+            background: #fff;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+            border-top: 10px solid var(--excel-green);
+        }
+
+        header {
+            text-align: center;
+            border-bottom: 2px solid #f1f5f9;
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+        }
+
+        h1 {
+            color: var(--excel-green);
+            font-size: 2.2rem;
+            margin: 0;
+        }
+
+        h2 {
+            color: var(--excel-green);
+            border-left: 6px solid var(--ub-red);
+            padding: 10px 0 10px 15px;
+            margin-top: 40px;
+            font-size: 1.6rem;
+            background: #f8fafc;
+        }
+
+        h3 {
+            color: var(--ub-blue);
+            margin-top: 25px;
+            border-bottom: 1px solid #e2e8f0;
+            padding-bottom: 5px;
+        }
+
+        .box-info {
+            background-color: #f1f5f9;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 20px 0;
+            border: 1px solid #e2e8f0;
+        }
+
+        .important { color: var(--ub-red); font-weight: bold; }
+
+        .test-alert {
+            background-color: #f0fff4;
+            border: 2px dashed var(--excel-green);
+            padding: 20px;
+            margin: 25px 0;
+            border-radius: 8px;
+        }
+
+        .skill-level {
+            display: inline-block;
+            background: var(--ub-blue);
+            color: white;
+            padding: 2px 10px;
+            border-radius: 4px;
+            font-size: 0.8rem;
+            margin-bottom: 10px;
+        }
+
+        code {
+            background: #f1f5f9;
+            padding: 2px 5px;
+            border-radius: 4px;
+            font-family: 'Consolas', monospace;
+            color: #c026d3;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 60px;
+            padding-top: 20px;
+            border-top: 1px solid #e2e8f0;
+            color: #94a3b8;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+
+    <a href="../index.html" class="btn-inici"><span>←</span> Tornar a l'inici</a>
+
+    <div class="container">
+        <header>
+            <h1>Tema 18: Microsoft Excel 2024</h1>
+            <p>Tractament d'informació numèrica (Equivalència ACTIC Nivells 1 i 2)</p>
+        </header>
+
+        <section>
+            <span class="skill-level">Nivell I (Competència C6 - Nivell 1 ACTIC)</span>
+            <h2>1. Referències i Càlculs Fonamentals</h2>
+            <div class="box-info">
+                La base d'Excel és com s'ajusten les fórmules en copiar-les o moure-les.
+            </div>
+            <ul>
+                <li><strong>Relatives (<code>A1</code>):</strong> Canvien segons la posició relativa al copiar la fórmula.</li>
+                <li><strong>Absolutes (<code>$A$1</code>):</strong> Es mantenen fixes sempre. Útil per a taxes d'IVA o valors constants.</li>
+                <li><strong>Mixtes (<code>$A1</code> o <code>A$1</code>):</strong> Fixen només la columna o només la fila.</li>
+            </ul>
+
+            <h3>Funcions Bàsiques</h3>
+            <ul>
+                <li><code>SUMA</code>: Suma d'un rang de cel·les.</li>
+                <li><code>PROMIG</code>: Mitjana aritmètica.</li>
+                <li><code>MÀXIM</code> i <code>MÍNIM</code>: Valors extrems d'un rang.</li>
+                <li><code>COMPTA</code>: Compta cel·les amb números (<code>COMPTARA</code> per a qualsevol contingut).</li>
+                <li><code>SI</code>: Funció lògica bàsica (Condició; valor si cert; valor si fals).</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>2. Gestió de Dades i Visualització</h2>
+            <ul>
+                <li><strong>Taules Estructurades:</strong> Convertir un rang en taula (Ctrl+T) per permetre referències estructurades i formats automàtics.</li>
+                <li><strong>Filtres:</strong> Seleccionar dades específiques segons criteris.</li>
+                <li><strong>Validació de dades:</strong> Restringir el tipus de dades que es poden introduir en una cel·la (ex: llistes desplegables).</li>
+                <li><strong>Format Condicional:</strong> Canviar l'aparença de la cel·la segons el seu valor (colors, icones).</li>
+                <li><strong>Gràfics:</strong> Representació visual mitjançant barres, línies o sectors.</li>
+            </ul>
+        </section>
+
+        <hr>
+
+        <section>
+            <span class="skill-level">Nivell II (Competència C6 - Nivell 2 ACTIC)</span>
+            <h2>3. Funcions Avançades i Lògica</h2>
+            <div class="test-alert">
+                <strong>CERCA.X (XLOOKUP):</strong> La funció moderna que substitueix CERCA.V. És més potent, no requereix que la dada estigui a l'esquerra i gestiona errors nativament.
+            </div>
+            <ul>
+                <li><strong>INDEX i COINCIDIR:</strong> Combinació clàssica per a cerques més flexibles que CERCA.V.</li>
+                <li><strong>SI.MULTIPLE:</strong> Per avaluar diverses condicions sense niuar molts "SI".</li>
+                <li><strong>Funcions de Text:</strong> <code>CONCAT</code>, <code>TEXT</code>, <code>ESQUERRA</code>, <code>DRETA</code> per manipular cadenes.</li>
+                <li><strong>Funcions de Data:</strong> <code>AVUI</code>, <code>ARA</code>, <code>DIA</code>, <code>MES</code>, <code>ANY</code>.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>4. Taules Dinàmiques (Pivot Tables)</h2>
+            <p>Eina per resumir grans quantitats de dades de forma interactiva.</p>
+            <ul>
+                <li><strong>Creació:</strong> Inserir des d'una taula o rang.</li>
+                <li><strong>Configuració:</strong> Àrees de Filtres, Columnes, Files i Valors.</li>
+                <li><strong>Segmentadors:</strong> Botons visuals per filtrar dades de la taula dinàmica ràpidament.</li>
+                <li><strong>Línies de temps:</strong> Filtres visuals específics per a dates.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>5. Anàlisi i Power Query</h2>
+            <ul>
+                <li><strong>Fórmules en taules estructurades:</strong> Ús de l'arrova (<code>[@Columna]</code>) per referir-se a dades de la mateixa fila.</li>
+                <li><strong>Power Query:</strong> Introducció a l'eina "Obtenir i transformar dades" per connectar, netejar i combinar fonts externes.</li>
+                <li><strong>Gràfics Avançats:</strong> Combinats (dues sèries amb eixos diferents), mapes i mini-gràfics (sparklines).</li>
+            </ul>
+        </section>
+
+        <section class="test-alert">
+            <h3>⚠️ Alerta Examen: Configuració d'Impressió</h3>
+            <ul>
+                <li><strong>Repetir títols:</strong> Opció per imprimir les capçaleres de la taula en cada pàgina.</li>
+                <li><strong>Àrea d'impressió:</strong> Definir quina part del full s'ha d'imprimir.</li>
+                <li><strong>Ajustar a 1 pàgina:</strong> Forçar l'escala perquè tot el contingut càpiga en l'ample del paper.</li>
+            </ul>
+        </section>
+
+        <footer>© 2025 Oposició UB 2026 - Tema 18 preparat</footer>
+    </div>
+</body>
+</html>

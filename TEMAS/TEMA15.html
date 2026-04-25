@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tema 15: Prevenció de Riscos Laborals - UB</title>
+    <style>
+        :root {
+            --ub-blue: #003058;
+            --ub-red: #e30613;
+            --light-bg: #f8fafc;
+            --text-dark: #1e293b;
+        }
+
+        body {
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: var(--text-dark);
+            background-color: var(--light-bg);
+            margin: 0;
+            padding: 0;
+        }
+
+        .btn-inici {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            background-color: #000;
+            color: #fff;
+            padding: 12px 20px;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: bold;
+            font-size: 14px;
+            z-index: 1000;
+            border: 1px solid rgba(255,255,255,0.3);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .btn-inici:hover {
+            background-color: #333;
+            transform: translateX(-3px);
+        }
+
+        .container {
+            max-width: 850px;
+            margin: 100px auto 40px;
+            background: #fff;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+            border-top: 10px solid var(--ub-blue);
+        }
+
+        header {
+            text-align: center;
+            border-bottom: 2px solid #f1f5f9;
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+        }
+
+        h1 {
+            color: var(--ub-blue);
+            font-size: 2.2rem;
+            margin: 0;
+        }
+
+        h2 {
+            color: var(--ub-blue);
+            border-left: 6px solid var(--ub-red);
+            padding: 10px 0 10px 15px;
+            margin-top: 40px;
+            font-size: 1.6rem;
+            background: #f8fafc;
+        }
+
+        .box-constitucio {
+            background-color: #f1f5f9;
+            border-radius: 8px;
+            padding: 25px;
+            margin: 20px 0;
+            border: 1px solid #e2e8f0;
+        }
+
+        .important { color: var(--ub-red); font-weight: bold; }
+
+        .test-alert {
+            background-color: #fffbeb;
+            border: 2px dashed #f59e0b;
+            padding: 20px;
+            margin: 25px 0;
+            border-radius: 8px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 25px 0;
+        }
+
+        th, td {
+            text-align: left;
+            padding: 12px;
+            border-bottom: 1px solid #e2e8f0;
+        }
+
+        th { background-color: var(--ub-blue); color: white; }
+
+        footer {
+            text-align: center;
+            margin-top: 60px;
+            padding-top: 20px;
+            border-top: 1px solid #e2e8f0;
+            color: #94a3b8;
+            font-size: 0.9rem;
+        }
+
+        .highlight-text {
+            background: #fef2f2;
+            padding: 2px 5px;
+            border-radius: 4px;
+            color: var(--ub-red);
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+
+    <a href="../index.html" class="btn-inici"><span>←</span> Tornar a l'inici</a>
+
+    <div class="container">
+        <header>
+            <h1>Tema 15: Prevenció de Riscos Laborals (LPRL)</h1>
+        </header>
+
+        <section>
+            <h2>1. La Llei 31/1995 de Prevenció de Riscos Laborals (LPRL)</h2>
+            <div class="box-constitucio">
+                L'objectiu de la <strong>LPRL</strong> és promoure la seguretat i la salut dels treballadors mitjançant l'aplicació de mesures i el desenvolupament de les activitats necessàries per a la prevenció de riscos derivats del treball.
+            </div>
+            <ul>
+                <li><strong>Àmbit d'aplicació:</strong> Tant treballadors amb relació laboral (laborals) com personal civil amb relació de caràcter administratiu (funcionaris).</li>
+                <li><strong>Definicions clau:</strong>
+                    <ul>
+                        <li><strong>Risc laboral:</strong> Possibilitat que un treballador pateixi un determinat dany derivat del treball.</li>
+                        <li><strong>Dany derivat del treball:</strong> Malalties, patologies o lesions patides amb motiu o ocasió del treball.</li>
+                        <li><strong>Equip de protecció individual (EPI):</strong> Qualsevol dispositiu portat pel treballador per protegir-lo de riscos.</li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>2. Principis de l'Acció Preventiva</h2>
+            <p>L'empresari (en aquest cas, la UB) ha d'aplicar les mesures seguint aquest ordre de prioritat:</p>
+            <ol>
+                <li>Evitar els riscos.</li>
+                <li>Avaluar els riscos que no es puguin evitar.</li>
+                <li>Combatir els riscos en el seu origen.</li>
+                <li>Adaptar el treball a la persona.</li>
+                <li>Tenir en compte l'evolució de la tècnica.</li>
+                <li>Substituir allò perillós per allò que comporti poc o cap perill.</li>
+                <li>Planificar la prevenció.</li>
+                <li>Adoptar mesures que anteposin la <span class="important">protecció col·lectiva</span> a la individual.</li>
+                <li>Donar les degudes instruccions als treballadors.</li>
+            </ol>
+        </section>
+
+        <section>
+            <h2>3. El Pla de Prevenció de la Universitat de Barcelona</h2>
+            <div class="box-constitucio">
+                El <strong>Pla de Prevenció de la UB</strong> és l'instrument de gestió mitjançant el qual s'integra l'activitat preventiva en el sistema general de gestió de la Universitat.
+            </div>
+            <p><strong>Estructura general i contingut:</strong></p>
+            <ul>
+                <li><strong>Compromís:</strong> La política preventiva de la UB.</li>
+                <li><strong>Organització:</strong> L'estructura organitzativa (OSSMA - Oficina de Seguretat, Salut i Medi Ambient).</li>
+                <li><strong>Responsabilitats:</strong> Assignació de funcions preventives a tots els nivells jeràrquics.</li>
+                <li><strong>Avaluació i Planificació:</strong> Identificació de perills i mesures correctores.</li>
+            </ul>
+        </section>
+
+        <section class="test-alert">
+            <h3>⚠️ Alerta Examen UB: Vigilància de la Salut</h3>
+            <p>L'empresari ha de garantir als treballadors la vigilància periòdica del seu estat de salut en funció dels riscos inherents al treball.</p>
+            <ul>
+                <li><strong>Voluntarietat:</strong> Com a norma general, és <span class="important">voluntària</span> per al treballador.</li>
+                <li><strong>Excepcions (Obligatorietat):</strong> Quan sigui imprescindible per avaluar els efectes de les condicions de treball o per verificar si l'estat de salut pot constituir un perill per al propi treballador o tercers.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>4. Drets i Deures</h2>
+            <table>
+                <thead>
+                    <tr><th>Subjecte</th><th>Drets / Deures clau</th></tr>
+                </thead>
+                <tbody>
+                    <tr><td><strong>Treballador</strong></td><td>Dret a la informació, formació, consulta, participació i interrupció de l'activitat en cas de risc greu i imminent.</td></tr>
+                    <tr><td><strong>Treballador</strong></td><td>Deure de fer un ús adequat de màquines i equips, i utilitzar correctament els EPIs.</td></tr>
+                    <tr><td><strong>Empresa (UB)</strong></td><td>Deure de protecció integral. Elaboració del Pla de prevenció.</td></tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section class="test-alert">
+            <h3>🔍 OSSMA: El servei propi</h3>
+            <p>A la UB, l'<strong>OSSMA</strong> és l'òrgan encarregat de la gestió tècnica de la prevenció, el medi ambient i la seguretat a tots els campus.</p>
+        </section>
+
+        <footer>© 2025 Oposició UB 2026 - Tema 15 preparat</footer>
+    </div>
+</body>
+</html>

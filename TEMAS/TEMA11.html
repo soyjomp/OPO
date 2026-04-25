@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tema 11: Protecció de Dades (RGPD) - UB</title>
+    <style>
+        :root {
+            --ub-blue: #003058;
+            --ub-red: #e30613;
+            --light-bg: #f8fafc;
+            --text-dark: #1e293b;
+        }
+
+        body {
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: var(--text-dark);
+            background-color: var(--light-bg);
+            margin: 0;
+            padding: 0;
+        }
+
+        .btn-inici {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            background-color: #000;
+            color: #fff;
+            padding: 12px 20px;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: bold;
+            font-size: 14px;
+            z-index: 1000;
+            border: 1px solid rgba(255,255,255,0.3);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .btn-inici:hover {
+            background-color: #333;
+            transform: translateX(-3px);
+        }
+
+        .container {
+            max-width: 850px;
+            margin: 100px auto 40px;
+            background: #fff;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+            border-top: 10px solid var(--ub-blue);
+        }
+
+        header {
+            text-align: center;
+            border-bottom: 2px solid #f1f5f9;
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+        }
+
+        h1 {
+            color: var(--ub-blue);
+            font-size: 2.2rem;
+            margin: 0;
+        }
+
+        h2 {
+            color: var(--ub-blue);
+            border-left: 6px solid var(--ub-red);
+            padding: 10px 0 10px 15px;
+            margin-top: 40px;
+            font-size: 1.6rem;
+            background: #f8fafc;
+        }
+
+        .box-constitucio {
+            background-color: #f1f5f9;
+            border-radius: 8px;
+            padding: 25px;
+            margin: 20px 0;
+            border: 1px solid #e2e8f0;
+        }
+
+        .important { color: var(--ub-red); font-weight: bold; }
+
+        .test-alert {
+            background-color: #fffbeb;
+            border: 2px dashed #f59e0b;
+            padding: 20px;
+            margin: 25px 0;
+            border-radius: 8px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 25px 0;
+        }
+
+        th, td {
+            text-align: left;
+            padding: 15px;
+            border-bottom: 1px solid #e2e8f0;
+        }
+
+        th { background-color: var(--ub-blue); color: white; }
+
+        footer {
+            text-align: center;
+            margin-top: 60px;
+            padding-top: 20px;
+            border-top: 1px solid #e2e8f0;
+            color: #94a3b8;
+            font-size: 0.9rem;
+        }
+
+        .highlight-text {
+            background: #fef2f2;
+            padding: 2px 5px;
+            border-radius: 4px;
+            color: var(--ub-red);
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+
+    <a href="../index.html" class="btn-inici"><span>←</span> Tornar a l'inici</a>
+
+    <div class="container">
+        <header>
+            <h1>Tema 11: Reglament General de Protecció de Dades (RGPD)</h1>
+        </header>
+
+        <section>
+            <h2>1. Disposicions Generals (Capítol I)</h2>
+            <div class="box-constitucio">
+                El <strong>Reglament (UE) 2016/679 (RGPD)</strong> és la norma suprema a Europa sobre protecció de dades. És d'aplicació directa en tots els estats membres des del 2018.
+            </div>
+            <ul>
+                <li><strong>Objecte:</strong> Protegir els drets i llibertats fonamentals de les persones físiques, especialment el dret a la protecció de dades personals.</li>
+                <li><strong>Àmbit territorial:</strong> S'aplica a responsables a la UE, i a responsables fora de la UE si tracten dades de ciutadans europeus (oferint béns/serveis o controlant el seu comportament).</li>
+                <li><strong>Dada personal:</strong> Qualsevol informació sobre una persona física identificada o <span class="important">identificable</span> (nom, ID, localització, IP).</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>2. Principis del Tractament (Capítol II)</h2>
+            <p>Aquests principis han de regir qualsevol activitat de tractament de dades a la UB:</p>
+            <table>
+                <thead>
+                    <tr><th>Principi</th><th>Descripció</th></tr>
+                </thead>
+                <tbody>
+                    <tr><td><strong>Llicitud, lleialtat i transparència</strong></td><td>Tractades de forma lícita i amb informació clara a l'interessat.</td></tr>
+                    <tr><td><strong>Limitació de la finalitat</strong></td><td>Recollides amb fins determinats, explícits i legítims.</td></tr>
+                    <tr><td><strong>Minimització de dades</strong></td><td>Només les dades adequades, pertinents i <span class="highlight-text">necessàries</span>.</td></tr>
+                    <tr><td><strong>Exactitud</strong></td><td>Dades actualitzades; eliminar o rectificar les inexactes.</td></tr>
+                    <tr><td><strong>Limitació del termini</strong></td><td>Conservades només el temps necessari per a la finalitat.</td></tr>
+                    <tr><td><strong>Integritat i confidencialitat</strong></td><td>Garantir la seguretat contra tractaments no autoritzats o pèrdua.</td></tr>
+                </tbody>
+            </table>
+            <div class="test-alert">
+                <strong>Responsabilitat proactiva (Accountability):</strong> El responsable (la UB) no només ha de complir els principis, sinó que ha de ser capaç de <strong>demostrar</strong> que els compleix.
+            </div>
+        </section>
+
+        <section>
+            <h2>3. Drets de l'Interessat (Capítol III)</h2>
+            <p>Els famosos drets "ARSLO" (ampliats pel RGPD):</p>
+            <ul>
+                <li><strong>Accés:</strong> Saber si s'estan tractant dades i obtenir-ne una còpia.</li>
+                <li><strong>Rectificació:</strong> Corregir dades inexactes o completar les incompletes.</li>
+                <li><strong>Supressió ("Dret a l'oblit"):</strong> Eliminar dades quan ja no són necessàries o s'ha retirat el consentiment.</li>
+                <li><strong>Limitació del tractament:</strong> Sol·licitar que no s'apliquin les dades en certs supòsits (mentre es verifica l'exactitud, etc.).</li>
+                <li><strong>Portabilitat:</strong> Rebre les dades en format estructurat i transmetre-les a un altre responsable.</li>
+                <li><strong>Oposició:</strong> Oposar-se al tractament per motius personals o màrqueting directe.</li>
+            </ul>
+        </section>
+
+        <section class="test-alert">
+            <h3>⚠️ Alerta Examen UB</h3>
+            <p><strong>Consentiment:</strong> Ha de ser una manifestació de voluntat <span class="important">lliure, específica, informada i inequívoca</span> (mitjançant una clara acció afirmativa). Ja no val el consentiment tàcit.</p>
+            <p><strong>Dades de categories especials:</strong> Revelen origen ètnic, opinions polítiques, conviccions religioses, dades genètiques, biomètriques, salut o orientació sexual. El seu tractament està prohibit per defecte, llevat d'excepcions legals.</p>
+        </section>
+
+        <section>
+            <h2>4. Estructura General</h2>
+            <p>El RGPD consta de 99 articles i 173 considerands. Els blocs que entren a l'examen són:</p>
+            <ul>
+                <li><strong>Capítol I:</strong> Normes generals i definicions.</li>
+                <li><strong>Capítol II:</strong> El "decàleg" de principis.</li>
+                <li><strong>Capítol III:</strong> El catàleg de drets que el ciutadà pot exercir davant la UB.</li>
+            </ul>
+        </section>
+
+        <footer>© 2025 Oposició UB 2026 - Tema 11 preparat</footer>
+    </div>
+</body>
+</html>

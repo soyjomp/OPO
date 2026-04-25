@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tema 9: Revisió, Recursos i Responsabilitat - UB</title>
+    <style>
+        :root {
+            --ub-blue: #003058;
+            --ub-red: #e30613;
+            --light-bg: #f8fafc;
+            --text-dark: #1e293b;
+        }
+
+        body {
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: var(--text-dark);
+            background-color: var(--light-bg);
+            margin: 0;
+            padding: 0;
+        }
+
+        .btn-inici {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            background-color: #000;
+            color: #fff;
+            padding: 12px 20px;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: bold;
+            font-size: 14px;
+            z-index: 1000;
+            border: 1px solid rgba(255,255,255,0.3);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .btn-inici:hover {
+            background-color: #333;
+            transform: translateX(-3px);
+        }
+
+        .container {
+            max-width: 850px;
+            margin: 100px auto 40px;
+            background: #fff;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+            border-top: 10px solid var(--ub-blue);
+        }
+
+        header {
+            text-align: center;
+            border-bottom: 2px solid #f1f5f9;
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+        }
+
+        h1 {
+            color: var(--ub-blue);
+            font-size: 2.2rem;
+            margin: 0;
+        }
+
+        h2 {
+            color: var(--ub-blue);
+            border-left: 6px solid var(--ub-red);
+            padding: 10px 0 10px 15px;
+            margin-top: 40px;
+            font-size: 1.6rem;
+            background: #f8fafc;
+        }
+
+        .box-constitucio {
+            background-color: #f1f5f9;
+            border-radius: 8px;
+            padding: 25px;
+            margin: 20px 0;
+            border: 1px solid #e2e8f0;
+        }
+
+        .important { color: var(--ub-red); font-weight: bold; }
+
+        .test-alert {
+            background-color: #fffbeb;
+            border: 2px dashed #f59e0b;
+            padding: 20px;
+            margin: 25px 0;
+            border-radius: 8px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 25px 0;
+        }
+
+        th, td {
+            text-align: left;
+            padding: 15px;
+            border-bottom: 1px solid #e2e8f0;
+        }
+
+        th { background-color: var(--ub-blue); color: white; }
+
+        .badge {
+            background: var(--ub-red);
+            color: white;
+            padding: 3px 10px;
+            border-radius: 12px;
+            font-size: 0.8rem;
+            font-weight: bold;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 60px;
+            padding-top: 20px;
+            border-top: 1px solid #e2e8f0;
+            color: #94a3b8;
+            font-size: 0.9rem;
+        }
+
+        .highlight-text {
+            background: #fef2f2;
+            padding: 2px 5px;
+            border-radius: 4px;
+            color: var(--ub-red);
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+
+    <a href="../index.html" class="btn-inici"><span>←</span> Tornar a l'inici</a>
+
+    <div class="container">
+        <header>
+            <h1>Tema 9: Revisió d'Actes i Responsabilitat Patrimonial</h1>
+        </header>
+
+        <section>
+            <h2>1. La Revisió d'Ofici</h2>
+            <div class="box-constitucio">
+                L'Administració pot revisar els seus propis actes sense necessitat que l'interessat interposi un recurs.
+            </div>
+            <ul>
+                <li><strong>Revisió d'actes nuls (Art. 106 Llei 39/2015):</strong> En qualsevol moment, per iniciativa pròpia o a sol·licitud d'interessat, previ dictamen favorable de l'òrgan consultiu (Comissió Jurídica Assessora a Catalunya).</li>
+                <li><strong>Declaració de lesivitat d'actes anul·lables:</strong> Per a actes que favorable per als interessats però lesionen l'interès públic. L'Administració els declara "lesius" i els impugna davant la jurisdicció contenciosa administrativa.</li>
+                <li><strong>Revocació:</strong> L'Administració pot revocar en qualsevol moment els seus actes de gravamen o desfavorables.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>2. Els Recursos Administratius</h2>
+            <p>Són el mecanisme perquè els ciutadans impugnin els actes davant la mateixa Administració.</p>
+            <table>
+                <thead>
+                    <tr><th>Recurs</th><th>Contra quins actes?</th><th>Termini Interposició</th><th>Resolució</th></tr>
+                </thead>
+                <tbody>
+                    <tr><td><strong>Alçada</strong></td><td>Actes que NO exhaureixen la via administrativa.</td><td>1 mes</td><td>3 mesos</td></tr>
+                    <tr><td><strong>Reposició</strong> (Opcional)</td><td>Actes que SÍ exhaureixen la via administrativa.</td><td>1 mes</td><td>1 mes</td></tr>
+                    <tr><td><strong>Extraordinari de Revisió</strong></td><td>Actes ferms (només casos taxats com error de fet o documents nous).</td><td>3 mesos / 4 anys</td><td>3 mesos</td></tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section class="test-alert">
+            <h3>⚠️ Alerta Examen UB: La Via Administrativa</h3>
+            <p><strong>A la UB, exhaureixen la via administrativa:</strong> Les resolucions del <strong>Rector</strong> i els acords del <strong>Consell Social</strong> i del <strong>Consell de Govern</strong>. Contra aquests, s'interposa recurs de reposició (opcional) o directament el contenciós.</p>
+            <p>Contra les resolucions d'òrgans que no exhaureixen la via (ex: un Degà o un Gerent), cal interposar <strong>Recurs d'Alçada</strong> davant el Rector.</p>
+        </section>
+
+        <section>
+            <h2>3. El Recurs Contenciós Administratiu</h2>
+            <div class="box-constitucio">
+                És la fase judicial. S'interposa davant els Jutjats o Tribunals del Contenciós-Administratiu un cop finalitzada la via administrativa.
+            </div>
+            <ul>
+                <li><strong>Termini general:</strong> <span class="important">2 mesos</span> des de la notificació de l'acte o la resolució del recurs.</li>
+                <li><strong>En cas de silenci:</strong> 6 mesos (tot i que la jurisprudència és flexible).</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>4. Responsabilitat de les Administracions Públiques</h2>
+            <p>Els particulars tenen dret a ser indemnitzats per qualsevol lesió en els seus béns i drets, sempre que la lesió sigui conseqüència del funcionament dels serveis públics.</p>
+            <div class="test-alert">
+                <strong>Requisits per a la indemnització:</strong>
+                <ol>
+                    <li>Dany real, avaluable econòmicament i individualitzat.</li>
+                    <li>Nexe causal entre el funcionament del servei i el dany.</li>
+                    <li>Absència de força major.</li>
+                </ol>
+            </div>
+            <p><strong>Termini de prescripció:</strong> El dret a reclamar prescriu a l'<strong>any</strong> de produir-se l'fet o l'acte que motivi la indemnització (en cas de danys físics, des de la curació o determinació de seqüeles).</p>
+        </section>
+
+        <footer>© 2025 Oposició UB 2026 - Tema 9 preparat</footer>
+    </div>
+</body>
+</html>

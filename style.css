@@ -1,0 +1,204 @@
+/* General */
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #f7f8fc;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background: #004aad;
+  color: white;
+  padding: 25px 0;
+  text-align: center;
+}
+
+main {
+  width: 95%;
+  max-width: 1200px;
+  margin: 0 auto 50px auto;
+}
+
+.section-title {
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+.section-title h2 {
+  color: #333;
+  font-size: 1.4rem;
+}
+
+.section-title hr {
+  border: 0;
+  height: 3px;
+  background: #004aad;
+  width: 50px;
+  margin: 0;
+}
+
+/* --- Bloc Col·lapsable --- */
+.bloc-container {
+  background: white;
+  margin-bottom: 15px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  border: 1px solid #e0e6ed;
+  overflow: hidden;
+}
+
+summary {
+  padding: 18px 25px;
+  background: #fff;
+  color: #004aad;
+  font-weight: 600;
+  cursor: pointer;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  font-size: 1.1rem;
+}
+
+summary:hover {
+  background: #f8faff;
+}
+
+summary::before {
+  content: '▶';
+  display: inline-block;
+  margin-right: 15px;
+  font-size: 0.8rem;
+  transition: transform 0.3s;
+}
+
+details[open] summary::before {
+  transform: rotate(90deg);
+}
+
+details[open] summary {
+  border-bottom: 2px solid #f0f4f8;
+}
+
+/* Graella de targetes */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 15px;
+  padding: 20px;
+}
+
+/* Targetes */
+.test-card {
+  background: white;
+  border: 1px solid #f0f0f0;
+  border-radius: 10px;
+  padding: 18px;
+  text-align: center;
+  transition: transform 0.2s, box-shadow 0.2s;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+}
+
+.test-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+  border-color: #004aad;
+}
+
+.test-card p {
+  color: #555;
+  font-size: 0.85rem;
+  margin-bottom: 10px;
+  line-height: 1.4;
+  text-align: left;
+}
+
+/* Botons */
+.buttons-container {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+}
+
+.test-card a {
+  text-decoration: none;
+  padding: 10px 5px;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 0.75rem;
+  transition: opacity 0.2s;
+  flex: 1;
+  background: #004aad;
+  color: white;
+}
+
+.btn-apunts {
+  background-color: #27ae60 !important;
+}
+
+/* Badges */
+.badge {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  padding: 3px 8px;
+  border-radius: 20px;
+  font-size: 0.6rem;
+  font-weight: bold;
+}
+
+.badge-normal { background: #e3f2fd; color: #0d47a1; }
+.badge-ofi { background: #e8f5e9; color: #2e7d32; }
+
+/* Especialitats */
+.test-general {
+  background: #fffdf2;
+  border: 2px solid #f1c40f;
+  margin: 20px auto;
+  max-width: 400px;
+}
+
+.real-exam {
+  border-top: 4px solid #004aad;
+}
+
+footer {
+  background: #004aad;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  margin-top: 40px;
+}
+
+/* --- NOUS ESTILS DE SEGUIMENT --- */
+.test-status {
+  font-size: 0.75rem;
+  margin-bottom: 12px;
+  padding: 6px;
+  border-radius: 5px;
+  font-weight: 600;
+  background: #f8f9fa;
+  border: 1px dashed #ccc;
+  color: #777;
+}
+
+.card-passed { border: 2px solid #27ae60 !important; background: #f0fff4 !important; }
+.card-failed { border: 2px solid #e74c3c !important; background: #fff5f5 !important; }
+
+.status-passed { color: #27ae60; border-color: #27ae60; background: #e8f5e9; border-style: solid; }
+.status-failed { color: #e74c3c; border-color: #e74c3c; background: #fce8e8; border-style: solid; }
+
+.btn-reset {
+  background: #ff4757;
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  transition: background 0.3s;
+}
+.btn-reset:hover { background: #ff6b81; }

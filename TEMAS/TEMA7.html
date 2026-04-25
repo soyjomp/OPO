@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tema 7: Procediment Administratiu Electrònic - UB</title>
+    <style>
+        :root {
+            --ub-blue: #003058;
+            --ub-red: #e30613;
+            --light-bg: #f8fafc;
+            --text-dark: #1e293b;
+        }
+
+        body {
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: var(--text-dark);
+            background-color: var(--light-bg);
+            margin: 0;
+            padding: 0;
+        }
+
+        .btn-inici {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            background-color: #000;
+            color: #fff;
+            padding: 12px 20px;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: bold;
+            font-size: 14px;
+            z-index: 1000;
+            border: 1px solid rgba(255,255,255,0.3);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .btn-inici:hover {
+            background-color: #333;
+            transform: translateX(-3px);
+        }
+
+        .container {
+            max-width: 850px;
+            margin: 100px auto 40px;
+            background: #fff;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+            border-top: 10px solid var(--ub-blue);
+        }
+
+        header {
+            text-align: center;
+            border-bottom: 2px solid #f1f5f9;
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+        }
+
+        h1 {
+            color: var(--ub-blue);
+            font-size: 2.2rem;
+            margin: 0;
+        }
+
+        h2 {
+            color: var(--ub-blue);
+            border-left: 6px solid var(--ub-red);
+            padding: 10px 0 10px 15px;
+            margin-top: 40px;
+            font-size: 1.6rem;
+            background: #f8fafc;
+        }
+
+        .box-constitucio {
+            background-color: #f1f5f9;
+            border-radius: 8px;
+            padding: 25px;
+            margin: 20px 0;
+            border: 1px solid #e2e8f0;
+        }
+
+        .important { color: var(--ub-red); font-weight: bold; }
+
+        .test-alert {
+            background-color: #fffbeb;
+            border: 2px dashed #f59e0b;
+            padding: 20px;
+            margin: 25px 0;
+            border-radius: 8px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 25px 0;
+        }
+
+        th, td {
+            text-align: left;
+            padding: 15px;
+            border-bottom: 1px solid #e2e8f0;
+        }
+
+        th { background-color: var(--ub-blue); color: white; }
+
+        .badge {
+            background: var(--ub-red);
+            color: white;
+            padding: 3px 10px;
+            border-radius: 12px;
+            font-size: 0.8rem;
+            font-weight: bold;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 60px;
+            padding-top: 20px;
+            border-top: 1px solid #e2e8f0;
+            color: #94a3b8;
+            font-size: 0.9rem;
+        }
+
+        .highlight-text {
+            background: #fef2f2;
+            padding: 2px 5px;
+            border-radius: 4px;
+            color: var(--ub-red);
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+
+    <a href="../index.html" class="btn-inici"><span>←</span> Tornar a l'inici</a>
+
+    <div class="container">
+        <header>
+            <h1>Tema 7: El Procediment Administratiu Electrònic</h1>
+        </header>
+
+        <section>
+            <h2>1. Fonaments de l'Administració Electrònica</h2>
+            <div class="box-constitucio">
+                La <strong>Llei 39/2015</strong> estableix que el procediment administratiu ha de ser <span class="important">electrònic per defecte</span>. Les Administracions tenen el deure de dotar-se dels mitjans necessaris per fer-ho efectiu.
+            </div>
+            <ul>
+                <li><strong>Obligats a relacionar-se electrònicament (Art. 14.2):</strong> Persones jurídiques, entitats sense personalitat, professionals col·legiats, representants dels obligats i <span class="highlight-text">empleats públics</span> per als tràmits de la seva condició.</li>
+                <li><strong>Persones físiques:</strong> Poden triar el canal (electrònic o paper), llevat que reglamentàriament se'ls obligui (com en el cas d'oposicions a la UB).</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>2. La Seu Electrònica i el Portal de Transparència</h2>
+            <p>La <strong>Seu Electrònica</strong> és l'adreça electrònica disponible per als ciutadans a través de xarxes de telecomunicacions, la titularitat, gestió i administració de la qual correspon a una Administració Pública.</p>
+            <table>
+                <thead>
+                    <tr><th>Element</th><th>Funció a la UB</th></tr>
+                </thead>
+                <tbody>
+                    <tr><td><strong>Identificació</strong></td><td>La Seu garanteix la integritat i veracitat de la informació.</td></tr>
+                    <tr><td><strong>Disponibilitat</strong></td><td>Accés 24x7. Els terminis es computen segons l'hora oficial de la seu.</td></tr>
+                    <tr><td><strong>Catàleg de Tràmits</strong></td><td>Llistat de procediments que es poden iniciar en línia.</td></tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section class="test-alert">
+            <h3>⚠️ Alerta Examen UB: El Registre Electrònic</h3>
+            <p><strong>Còmput de terminis:</strong> El registre electrònic permet la presentació de documents tots els dies de l'any. Si un document es presenta en un dia inhàbil, es considera presentat a la <span class="important">primera hora del següent dia hàbil</span>.</p>
+            <p><strong>Justificant:</strong> El sistema ha d'emetre automàticament un rebut amb data, hora i número d'entrada.</p>
+        </section>
+
+        <section>
+            <h2>3. La Notificació Electrònica</h2>
+            <div class="box-constitucio">
+                Les notificacions es practicaran preferentment per mitjans electrònics i, en tot cas, quan l'interessat hi estigui obligat.
+            </div>
+            <ul>
+                <li><strong>Avís de notificació:</strong> L'Administració enviarà un avís al correu o dispositiu mòbil informat (tot i que la falta d'aquest avís no invalida la notificació).</li>
+                <li><strong>Accés a la notificació:</strong> Es considera practicada en el moment en què es produeix l'accés al seu contingut.</li>
+                <li><strong>Rebuig de la notificació:</strong> Si transcorren <span class="important">10 dies naturals</span> sense que l'interessat accedeixi al contingut, s'entén que la notificació ha estat rebutjada i el procediment continua.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>4. Identificació i Signatura Electrònica</h2>
+            <p>Diferència important per als tests:</p>
+            <table>
+                <thead>
+                    <tr><th>Concepte</th><th>Ús</th></tr>
+                </thead>
+                <tbody>
+                    <tr><td><strong>Identificació</strong></td><td>Acredita qui és la persona (DNIe, Cl@ve, certificat digital).</td></tr>
+                    <tr><td><strong>Signatura</strong></td><td>Acredita la voluntat i la integritat del document signat.</td></tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section class="test-alert">
+            <h3>🔍 Particularitats UB</h3>
+            <p>A la Universitat de Barcelona, el personal (PTGAS i PDI) està obligat a utilitzar la <strong>Signatura Electrònica</strong> per a qualsevol acte administratiu intern. La gestió documental es realitza mitjançant l'aplicació d'expedient electrònic que garanteix l'arxiu i la conservació.</p>
+        </section>
+
+        <footer>© 2025 Oposició UB 2026 - Tema 7 preparat</footer>
+    </div>
+</body>
+</html>
